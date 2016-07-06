@@ -1,0 +1,11 @@
+<h1>QA QUIZ</h1>
+<% @all_questions.each_with_index do |question, i| %>
+  <%= i + 1 %>. <%= question.text %><br>
+
+  <% question.quiz_question_answers.each_with_index do |answer, i| %>
+  &nbsp &nbsp &nbsp<%= i + 1 %>. <%= answer.text %><br>
+  <br>
+  <% end %>
+
+
+<% end %>
